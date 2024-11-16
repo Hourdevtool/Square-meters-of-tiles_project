@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณหาพื้นที่ปูกระเบื้อง</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="image-background">
+        </div>
+
+        <div class="position-form">
+            <center><h2>คำนวณหาพื้นที่ปูกระเบื้อง</h2></center>
+            
+      
+                <label>ความกว้าง(เมตร)</label>
+                <input id="width" type="text" required>
+
+                <label>ความยาว(เมตร)</label>
+                <input id="long" type="text" required>
+
+               <div style="height: 140px;"></div>
+                
+                <button class="btn" onclick="calculate(document.getElementById('width').value,document.getElementById('long').value)" >คำนวณ</button>
+                <div style="height: 60px;"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

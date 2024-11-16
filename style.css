@@ -1,0 +1,130 @@
+/* ตั้งค่าสไตล์พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sarabun";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* จัดการโครงสร้างหลัก */
+.container {
+    display: flex;
+    height: 90%;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-background {
+    width: 60%;
+    background: url('https://cdn.prod.website-files.com/613daef066b46f31a470e904/6268c0ffde6aeb4cb6e6b4cd_shutterstock_162339047.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+
+}
+
+
+.position-form {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.position-form h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* สไตล์ช่องกรอกข้อมูล */
+.position-form label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.position-form input[type="text"],
+.position-form input[type="email"],
+.position-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.position-form input[type="text"]:focus,
+.position-form input[type="email"]:focus,
+.position-form input[type="password"]:focus {
+    outline: none;
+    border-bottom: 1px solid #e91e63;
+}
+
+
+
+
+/* สไตล์ปุ่ม */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #e91e63, #ff4081);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #d81b60, #f50057);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-background {
+        width: 100%;
+        height: 200px;
+    }
+
+    .position-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .position-form h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .position-form input[type="text"],
+    .position-form input[type="email"],
+    .position-form input[type="password"] {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
